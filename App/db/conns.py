@@ -29,6 +29,15 @@ db_localhost_postgres ={
     'DATABASE_POSTGRES': 'rgmnutri'
 }
 
+db_azure_postgres ={
+    'HOST_POSTGRES' : 'rgmsolutions.postgres.database.azure.com',
+    'PORT_POSTGRES' : '5432',
+    'PWD_POSTGRES': 'rony0608-R',
+    'USERNAME_POSTGRES': 'rgmsolutions',
+    'DATABASE_POSTGRES': 'rgmnutri'
+}
+
+
 def return_db(intqual):
     if intqual == 0:
         return 'mysql://{}:{}@{}:{}/{}?charset=utf8'.format(db_locahost["USERNAME_MYSQL"],
@@ -52,5 +61,11 @@ def return_db(intqual):
                                                                      url=db_localhost_postgres['HOST_POSTGRES']+':'+
                                                                          db_localhost_postgres['PORT_POSTGRES'],
                                                                      db=db_localhost_postgres['DATABASE_POSTGRES'])
+    elif intqual == 4:
+        return 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user=db_azure_postgres['USERNAME_POSTGRES'],
+                                                                     pw=db_azure_postgres['PWD_POSTGRES'],
+                                                                     url=db_azure_postgres['HOST_POSTGRES']+':'+
+                                                                         db_azure_postgres['PORT_POSTGRES'],
+                                                                     db=db_azure_postgres['DATABASE_POSTGRES'])
 
 
