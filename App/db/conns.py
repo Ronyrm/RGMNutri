@@ -32,7 +32,7 @@ db_localhost_postgres ={
 db_azure_postgres ={
     'HOST_POSTGRES' : 'rgmsolutions.postgres.database.azure.com',
     'PORT_POSTGRES' : '5432',
-    'PWD_POSTGRES': 'rony0608-R',
+    'PWD_POSTGRES': 'rony-1234',
     'USERNAME_POSTGRES': 'rgmsolutions',
     'DATABASE_POSTGRES': 'rgmnutri'
 }
