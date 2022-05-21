@@ -9,10 +9,10 @@ db_locahost = {
 
 db_alwaysdata = {
     'USERNAME_MYSQL' : '268760',
-    'PWD_MYSQL' : 'rony0608',
+    'PWD_MYSQL' : 'rony1234',
     'HOST_MYSQL' : 'mysql-rgmsolutions.alwaysdata.net',
     'PORT_MYSQL' : '3306',
-    'DATABASE_MYSQL' : 'rgmsolutions_rgmsolutions'
+    'DATABASE_MYSQL' : 'rgmsolutions_rgmnutri'
 }
 db_doker = {
     'USERNAME_MYSQL' : 'root',

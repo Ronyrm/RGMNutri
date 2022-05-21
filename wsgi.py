@@ -2,7 +2,7 @@ import sys
 import os
 
 from App import app as application
-from App import db as datatbase
+from App import db 
 
 sys.path.append(os.path.dirname(__file__))
 
