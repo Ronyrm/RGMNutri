@@ -2011,4 +2011,16 @@ async function dados_moeda_BR(){
   '</a>'+
   '<a class="carousel-control-next" href="#demo" data-slide="next">'+
   '  <span class="carousel-control-next-icon"></span></a></div>';
+
 }
+function registrarAtleta(btnRegistrar){
+    let strTemp = btnRegistrar.innerHTML ;
+    btnRegistrar.innerHTML = str_div_loading + ' Registrando...';
+    btnRegistrar.enabled = false; 
+
+}
+function logandoAtleta(btnlogando){
+    btnlogando.innerHTML = str_div_loading + ' Aguarde...';
+    btnlogando.enabled = false; 
+}
+

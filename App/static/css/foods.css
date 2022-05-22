@@ -35,7 +35,8 @@ a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:
     background-color: var(--fundopagina)!important;
 }
 .bodyfoods{
-    background-color: var(--fundopagina)!important
+    background-color: var(--fundopagina)!important;
+    margin: 0px 3px 0px 3px;
 }
 
 .bodyblack{
